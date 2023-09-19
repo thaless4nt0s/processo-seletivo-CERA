@@ -1,0 +1,27 @@
+{
+  "name": "processo-seletivo-cera",
+  "version": "1.0.0",
+  "description": "Processo seletivo para programador na empresa CERA",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaless4nt0s/processo-seletivo-CERA.git"
+  },
+  "keywords": [],
+  "author": "Thales Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaless4nt0s/processo-seletivo-CERA/issues"
+  },
+  "homepage": "https://github.com/thaless4nt0s/processo-seletivo-CERA#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
