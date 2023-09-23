@@ -1,11 +1,16 @@
 const express = require("express");
+const config = require("./config/default");
+const rotasAPI = require("./src/routes/routes");
+const db = require("./config/database");
 
 const app = express();
+app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("<h1>Configuração inicial</h1>");
-});
+app.use("/", rotasAPI);
 
-app.listen(3000, () => {
-  console.log("Servidor rodando na porta 3000");
+//porta da aplicacao
+const port = config.port;
+app.listen(port, async () => {
+  await db();
+  console.log("Conectado ao servidor com sucesso");
 });
